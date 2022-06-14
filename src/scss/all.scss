@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+html, body, #root {
+    height: 100vh;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-size: 18px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    &::after {
+        content: '';
+        background-image: url(../assets/storm-weather-apps_s.webp);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+._container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+@import url(./header.scss);
+@import url(./weather.scss);
+@import url(./footer.scss);
+@import url(./error.scss);
+@import url(./time.scss);
+@import url(./forecast.scss);
