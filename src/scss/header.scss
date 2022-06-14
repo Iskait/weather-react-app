@@ -1,0 +1,34 @@
+.header {
+    margin-top: 40px;
+    &__container {}
+
+    &__row {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 10px;
+    }
+
+    &__input {
+        flex: 1 1 auto;
+        padding: 10px 35px 10px 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(255,255,255,0.8);
+        background: rgba(255,255,255,0.1);
+        font-weight: 600;
+        font-size: 18px;
+        &::placeholder {
+            color: rgb(46, 46, 46);
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__clear {
+        position: absolute;
+        right: 20px;
+        font-size: 20px;
+        background-color: transparent;
+    }
+}
